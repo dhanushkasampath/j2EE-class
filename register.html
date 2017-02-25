@@ -1,0 +1,68 @@
+
+<html>
+<head>
+
+<script>
+function validateForm() {
+    var x = document.forms["frm1"]["frstname"].value;
+	var y = document.forms["frm1"]["lastname"].value;
+    if ((x == "")||(x == null)) {
+        alert("firstname must be filled out");
+		return false;
+    }
+	
+	if ((y == "")||(y == null)) {
+        alert("lastname must be filled out");
+		return false;
+	}
+	
+}
+</script>
+
+</head>
+<body>
+
+<h2>Registration Form<h2>
+<form name="frm2">
+<table>
+	<tr>
+	<td>First Name:</td>
+	<td><input type="text" name="firstname"/></td>
+	</tr>
+	
+	<tr>
+	<td>Last Name:</td>
+	<td><input type="text" name="lastname"/></td>
+	</tr>
+	
+	<tr>
+	<td>sex:</td>
+	<td><input type="radio" name="gender" value="male"> Male
+	<input type="radio" name="gender" value="female"> Female</td>
+	</tr>
+	
+	<tr>
+	<td>User Name:</td>
+	<td><input type="text" name="username"/></td>
+	</tr>
+	
+	<tr>
+	<td>Password:</td>
+	<td><input type="password" name="username"/></td>
+	</tr>
+	
+	<tr>
+	<td>Re-enter password:</td>
+	<td><input type="text" name="re-enterpassword"/></td>
+	</tr>
+	
+	<tr>	
+	<td><button type="submit">Submit</button>
+	<button type="reset">Reset</button></td>
+	</tr>
+	
+	
+</table>	
+</form>
+</body>
+</html>
